@@ -14,9 +14,9 @@ namespace MyWeatherApp1054
         {
             Cities = new List<City>
             {
-                new City { CityName = "Sydney", CityImage = "sydney.jpg" },
-                new City { CityName = "London", CityImage = "london.jpg" },
-                new City { CityName = "Brisbane", CityImage = "brisbane.jpg" }
+                new City { CityName = "Sydney1", CityImage = "sydney.jpg" },
+                new City { CityName = "London1", CityImage = "london.jpg" },
+                new City { CityName = "Brisbane1", CityImage = "brisbane.jpg" }
             };
 
             GetCurrentLocation();

@@ -7,9 +7,15 @@ namespace MyWeatherApp1054.UnitTests
     public class Tests
     {
         [Test]
-        public void PipelinesTests()
+        public void PipelinesTestWithPass()
         {
             Assert.True(true);
+        }
+        
+        [Test]
+        public void PipelinesTestWithFail()
+        {
+            Assert.True(false);
         }
     }
 }

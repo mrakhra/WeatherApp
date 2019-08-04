@@ -27,10 +27,6 @@ jobs:
         !**\*TestAdapter.dll
         !**\obj\**
       searchFolder: '$(System.DefaultWorkingDirectory)'
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFormat: 'NUnit'
-      testResultsFiles: '**/TEST-*.xml'
 - job: Android
   pool:
     vmImage: 'vs2017-win2016'

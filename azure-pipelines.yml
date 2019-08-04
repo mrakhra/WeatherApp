@@ -11,19 +11,26 @@ jobs:
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
-  - task: VSBuild@1
+  - task: VisualStudioTestPlatformInstaller@1
     inputs:
-      solution: '**\*.sln' 
-      vsVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, 12.0, 11.0     
+      packageFeedSelector: 'nugetOrg'
+      versionSelector: 'latestStable'
+  - task: MSBuild@1
+    inputs:
+      solution: '**/*.sln'
+      restoreNugetPackages: true
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**\*Test*.dll'
+      testAssemblyVer2: |
+        **\*test*.dll
+        !**\*TestAdapter.dll
+        !**\obj\**
+      searchFolder: '$(System.DefaultWorkingDirectory)'
   - task: PublishTestResults@2
     inputs:
-      testResultsFormat: 'NUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest
-      testResultsFiles: '**/TEST-*.xml' 
-      searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+      testResultsFormat: 'NUnit'
+      testResultsFiles: '**/TEST-*.xml'
 - job: Android
   pool:
     vmImage: 'vs2017-win2016'

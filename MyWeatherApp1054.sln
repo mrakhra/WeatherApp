@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeatherApp1054.Android", "MyWeatherApp1054.Android\MyWeatherApp1054.Android.csproj", "{85543CDA-E98E-42E0-9BA7-EF9D62043EDC}"
@@ -6,6 +6,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeatherApp1054.iOS", "MyWeatherApp1054.iOS\MyWeatherApp1054.iOS.csproj", "{480DED73-D691-4DF3-A0EF-39B5ED88C696}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeatherApp1054", "MyWeatherApp1054\MyWeatherApp1054.csproj", "{D4AC30CD-98EB-44EC-BC7B-A13CFB13826B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeatherApp1054.UnitTests", "MyWeatherApp1054.UnitTests\MyWeatherApp1054.UnitTests.csproj", "{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,5 +55,17 @@ Global
 		{D4AC30CD-98EB-44EC-BC7B-A13CFB13826B}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{D4AC30CD-98EB-44EC-BC7B-A13CFB13826B}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{D4AC30CD-98EB-44EC-BC7B-A13CFB13826B}.Release|iPhone.Build.0 = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1DCF99E5-902C-44FA-BB56-3772D5F96CEE}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

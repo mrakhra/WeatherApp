@@ -13,9 +13,9 @@ namespace MyWeatherApp1054.UnitTests
         }
         
         [Test]
-        public void PipelinesTestWithFail()
+        public void PipelinesTestWithTrue()
         {
-            Assert.True(false);
+            Assert.True(true);
         }
     }
 }

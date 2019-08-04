@@ -19,6 +19,11 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**\*Test*.dll'
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'NUnit' # Options: JUnit, NUnit, VSTest, xUnit, cTest
+      testResultsFiles: '**/TEST-*.xml' 
+      searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
 - job: Android
   pool:
     vmImage: 'vs2017-win2016'

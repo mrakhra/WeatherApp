@@ -11,13 +11,14 @@ jobs:
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '**/*.sln'
+ - task: VSBuild@1
+    inputs:
+      solution: '**\*.sln' 
+      vsVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, 12.0, 11.0     
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: |
-        **\*test*.dll
-        !**\*TestAdapter.dll
-        !**\obj\** 
+      testAssemblyVer2: '**\*Test*.dll'
 - job: Android
   pool:
     vmImage: 'vs2017-win2016'
